@@ -1,0 +1,1140 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="874.4,466.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="62">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>Microsoft.Activities.Extensions.Statements</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities.Extensions</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="508,264" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,171.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.pokemon.com/us/pokedex/bulbasaur">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_66">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="PokemonName" />
+              <Variable x:TypeArguments="x:String" Name="PokemonNumber" />
+              <Variable x:TypeArguments="x:String" Name="PokemonImage" />
+              <Variable x:TypeArguments="x:String" Name="PokemonRegion" />
+              <Variable x:TypeArguments="x:String" Name="PokemonCategory" />
+              <Variable x:TypeArguments="x:String" Name="PokemonHeight" />
+              <Variable x:TypeArguments="x:String" Name="PokemonWeight" />
+              <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="AbilitiesList" />
+              <Variable x:TypeArguments="x:String" Name="PokemonBio" />
+              <Variable x:TypeArguments="scg:List(x:String)" Name="TypesList" />
+              <Variable x:TypeArguments="scg:List(x:String)" Name="WeaknessesList" />
+              <Variable x:TypeArguments="x:Boolean" Name="HasEvolutions" />
+              <Variable x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))" Name="EvolutionsList" />
+              <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="EvolutionDictionary" />
+              <Variable x:TypeArguments="x:String" Name="RequestBody" />
+              <Variable x:TypeArguments="x:Int32" Name="LoopNumber" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="Assign - LoopNumber" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_65">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[LoopNumber]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+              <ui:InterruptibleDoWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="652,4368.8" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Get Name &amp; Number" sap:VirtualizedContainerService.HintSize="610.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="NameHeader" />
+                      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="NameNumberMatches" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Name &amp; Number" sap:VirtualizedContainerService.HintSize="339.2,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_15">
+                      <ui:GetFullText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9736d7c4-a1db-4535-8e1a-65ffe444dce9" InformativeScreenshot="c05767691ba48a712a0959c3c67c3064" Selector="&lt;webctrl tag='DIV' parentclass='pokedex-pokemon-pagination-title' /&gt;&#xA;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetFullText.Target>
+                      <ui:GetFullText.Text>
+                        <OutArgument x:TypeArguments="x:String">[NameHeader]</OutArgument>
+                      </ui:GetFullText.Text>
+                    </ui:GetFullText>
+                    <ui:Matches BuilderPattern="(\w+)\s+#(\d+)" sap:VirtualizedContainerService.HintSize="339.2,60" sap2010:WorkflowViewState.IdRef="Matches_7" Input="[NameHeader.Trim]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\w+)\\s+#(\\d+)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\w+)\s+#(\d+)" RegexOption="IgnoreCase" Result="[NameNumberMatches]" />
+                    <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="339.2,387.2" sap2010:WorkflowViewState.IdRef="ForEach`1_19" Values="[NameNumberMatches]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="str:Match">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="str:Match" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,252.8" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign DisplayName="Assign - PokemonName" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_66">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[PokemonName]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[item.Groups(1).ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign DisplayName="Assign - PokemonName" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_67">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[PokemonNumber]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[item.Groups(2).ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                  </Sequence>
+                  <Assign DisplayName="Assign - Image Source" sap:VirtualizedContainerService.HintSize="610.4,60" sap2010:WorkflowViewState.IdRef="Assign_68">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[PokemonImage]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["https://www.serebii.net/pokemongo/pokemon/"+PokemonNumber+".png"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Sequence DisplayName="Find Region" sap:VirtualizedContainerService.HintSize="610.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[CInt(PokemonNumber) &lt; 152]" sap:VirtualizedContainerService.HintSize="2628,1256.8" sap2010:WorkflowViewState.IdRef="If_31">
+                      <If.Then>
+                        <Assign DisplayName="Assign - Kanto Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_69">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">Kanto</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <If Condition="[CInt(PokemonNumber) &gt;= 152 AndAlso CInt(PokemonNumber) &lt; 252]" sap:VirtualizedContainerService.HintSize="2321.6,1107.2" sap2010:WorkflowViewState.IdRef="If_30">
+                          <If.Then>
+                            <Assign DisplayName="Assign - Johto Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_70">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">Johto</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </If.Then>
+                          <If.Else>
+                            <If Condition="[CInt(PokemonNumber) &gt;= 252 AndAlso CInt(PokemonNumber) &lt; 387]" sap:VirtualizedContainerService.HintSize="2015.2,957.6" sap2010:WorkflowViewState.IdRef="If_29">
+                              <If.Then>
+                                <Assign DisplayName="Assign - Hoenn Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_71">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">Hoenn</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                              </If.Then>
+                              <If.Else>
+                                <If Condition="[CInt(PokemonNumber) &gt;= 387 AndAlso CInt(PokemonNumber) &lt; 494]" sap:VirtualizedContainerService.HintSize="1708.8,808" sap2010:WorkflowViewState.IdRef="If_28">
+                                  <If.Then>
+                                    <Assign DisplayName="Assign - Sinnoh Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_72">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">Sinnoh</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                  </If.Then>
+                                  <If.Else>
+                                    <If Condition="[CInt(PokemonNumber) &gt;= 494 AndAlso CInt(PokemonNumber) &lt; 650]" sap:VirtualizedContainerService.HintSize="1402.4,658.4" sap2010:WorkflowViewState.IdRef="If_27">
+                                      <If.Then>
+                                        <Assign DisplayName="Assign - Unova Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_73">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">Unova</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </If.Then>
+                                      <If.Else>
+                                        <If Condition="[CInt(PokemonNumber) &gt;= 650 AndAlso CInt(PokemonNumber) &lt; 722]" sap:VirtualizedContainerService.HintSize="1096,508.8" sap2010:WorkflowViewState.IdRef="If_26">
+                                          <If.Then>
+                                            <Assign DisplayName="Assign - Kalos Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_74">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">Kalos</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </If.Then>
+                                          <If.Else>
+                                            <If Condition="[CInt(PokemonNumber) &gt;= 722 AndAlso CInt(PokemonNumber) &lt; 810]" sap:VirtualizedContainerService.HintSize="789.6,359.2" sap2010:WorkflowViewState.IdRef="If_25">
+                                              <If.Then>
+                                                <Assign DisplayName="Assign - Alola Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_75">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">Alola</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                              </If.Then>
+                                              <If.Else>
+                                                <If Condition="[CInt(PokemonNumber) &gt;= 810]" sap:VirtualizedContainerService.HintSize="483.2,209.6" sap2010:WorkflowViewState.IdRef="If_24">
+                                                  <If.Then>
+                                                    <Assign DisplayName="Assign - Galar Region" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_76">
+                                                      <Assign.To>
+                                                        <OutArgument x:TypeArguments="x:String">[PokemonRegion]</OutArgument>
+                                                      </Assign.To>
+                                                      <Assign.Value>
+                                                        <InArgument x:TypeArguments="x:String">Galar</InArgument>
+                                                      </Assign.Value>
+                                                    </Assign>
+                                                  </If.Then>
+                                                </If>
+                                              </If.Else>
+                                            </If>
+                                          </If.Else>
+                                        </If>
+                                      </If.Else>
+                                    </If>
+                                  </If.Else>
+                                </If>
+                              </If.Else>
+                            </If>
+                          </If.Else>
+                        </If>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                  <Sequence DisplayName="Find Category, Height, Weight, Abilities" sap:VirtualizedContainerService.HintSize="610.4,2847.2" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Abilities" />
+                      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="AbilityDictionary" />
+                      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="HeightMatch" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Category" sap:VirtualizedContainerService.HintSize="474.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_16">
+                      <ui:GetFullText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c684332a-4da4-4374-9ba4-c98aee87c090" InformativeScreenshot="c21cfa1414dbcd8557caa0d0c6745121" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&lt;webctrl tag='SPAN' class='attribute-value' idx='4' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetFullText.Target>
+                      <ui:GetFullText.Text>
+                        <OutArgument x:TypeArguments="x:String">[PokemonCategory]</OutArgument>
+                      </ui:GetFullText.Text>
+                    </ui:GetFullText>
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Height" sap:VirtualizedContainerService.HintSize="474.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_17">
+                      <ui:GetFullText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b7f9946c-cddb-42d1-ac70-f1e4789b5bab" InformativeScreenshot="851f05894ffdf567a4d8e05e76a8ef41" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='/pokemon-go-169' title='* | Pokédex' /&gt;&lt;webctrl tag='SPAN' class='attribute-value' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;span' idx='1' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetFullText.Target>
+                      <ui:GetFullText.Text>
+                        <OutArgument x:TypeArguments="x:String">[PokemonHeight]</OutArgument>
+                      </ui:GetFullText.Text>
+                    </ui:GetFullText>
+                    <ui:Matches BuilderPattern="(\d)*'\s*(\d)*&quot;" DisplayName="Matches - Height" sap:VirtualizedContainerService.HintSize="474.4,60" sap2010:WorkflowViewState.IdRef="Matches_8" Input="[PokemonHeight]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\d)*'\\s*(\\d)*\&quot;&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d)*'\s*(\d)*&quot;" RegexOption="IgnoreCase" Result="[HeightMatch]" />
+                    <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="474.4,487.2" sap2010:WorkflowViewState.IdRef="ForEach`1_20" Values="[HeightMatch]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="str:Match">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="str:Match" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,352.8" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="HeightFeet" />
+                              <Variable x:TypeArguments="x:String" Name="HeightInches" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign DisplayName="Assign - HeightFeet" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_77">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[HeightFeet]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[item.Groups(1).ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign DisplayName="Assign - HeightInches" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_78">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[HeightInches]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[item.Groups(2).ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign DisplayName="Assign - PokemonHeight" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_79">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[PokemonHeight]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[HeightFeet + " feet " + HeightInches + " inches"]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Weight" sap:VirtualizedContainerService.HintSize="474.4,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_18">
+                      <ui:GetFullText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="64320fd4-adc9-4954-9d58-e49723cf980d" InformativeScreenshot="206016c221df16eff16fb32010677a68" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='/pokemon-go-169' title='* | Pokédex' /&gt;&lt;webctrl tag='SPAN' class='attribute-value' css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;span' idx='2' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetFullText.Target>
+                      <ui:GetFullText.Text>
+                        <OutArgument x:TypeArguments="x:String">[PokemonWeight]</OutArgument>
+                      </ui:GetFullText.Text>
+                    </ui:GetFullText>
+                    <ui:FindChildren Children="[Abilities]" DisplayName="Find Children - Abilities" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="474.4,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_13" Scope="FIND_CHILDREN">
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="44db9e24-a3ea-4b12-8f63-ebf9971dd409" InformativeScreenshot="913fae67cd7c3b058d1c80f0b3d9e908" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='/pokemon-go-169' title='* | Pokédex' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;ul' tag='UL' class='attribute-list' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                    </ui:FindChildren>
+                    <Assign DisplayName="Assign - Abilities List" sap:VirtualizedContainerService.HintSize="474.4,60" sap2010:WorkflowViewState.IdRef="Assign_80">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))">[AbilitiesList]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))">[new List(Of Dictionary(Of String, String))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each - Abilities LI" sap:VirtualizedContainerService.HintSize="474.4,1438.4" sap2010:WorkflowViewState.IdRef="ForEach`1_21" Values="[Abilities]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="ui:UiElement">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="439.2,1304" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="AbilityName" />
+                              <Variable x:TypeArguments="x:String" Name="AbilityDescription" />
+                              <Variable x:TypeArguments="x:String" Name="DynamicSelector" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign DisplayName="Assign - Ability Dictionary" sap:VirtualizedContainerService.HintSize="397.6,60" sap2010:WorkflowViewState.IdRef="Assign_81">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[AbilityDictionary]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[new Dictionary(Of String, String)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerText" DisplayName="Get Attribute - Ability Name" sap:VirtualizedContainerService.HintSize="397.6,96.8" sap2010:WorkflowViewState.IdRef="GetAttribute_9">
+                              <ui:GetAttribute.Result>
+                                <OutArgument x:TypeArguments="x:String">[AbilityName]</OutArgument>
+                              </ui:GetAttribute.Result>
+                              <ui:GetAttribute.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[item]" Id="e5bde990-3ecf-44fd-adee-116628d9cfbb">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetAttribute.Target>
+                            </ui:GetAttribute>
+                            <Assign sap2010:Annotation.AnnotationText="Added Substring() method to work around an issue with encountering an apostrophe (&amp;apos)." DisplayName="Assign - DynamicSelector" sap:VirtualizedContainerService.HintSize="397.6,120" sap2010:WorkflowViewState.IdRef="Assign_82">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[DynamicSelector]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">["&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&lt;webctrl aaname='"+AbilityName.Trim.Substring(0, 4)+"*' tag='SPAN' class='attribute-value' /&gt;"]</InArgument>
+                              </Assign.Value>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Assign>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - Show Ability Description" sap:VirtualizedContainerService.HintSize="397.6,107.2" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="49503438-ac1d-4ed8-a110-7bd6db21fa83" InformativeScreenshot="a32e8ced364e18326292cfaa469e4e38" Selector="[DynamicSelector]">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Ability Description" sap:VirtualizedContainerService.HintSize="397.6,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_19">
+                              <ui:GetFullText.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="80e447ab-ba67-47b7-bf51-989403d7408b" InformativeScreenshot="6f54d19237327938d6ce073f0bfcdd3c" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&lt;webctrl tag='P' parentclass='pokemon-ability-info-detail match' /&gt;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetFullText.Target>
+                              <ui:GetFullText.Text>
+                                <OutArgument x:TypeArguments="x:String">[AbilityDescription]</OutArgument>
+                              </ui:GetFullText.Text>
+                            </ui:GetFullText>
+                            <maes:AddToDictionary x:TypeArguments="x:String, x:String" Dictionary="[AbilityDictionary]" DisplayName="Add to dictionary - Ability Name" sap:VirtualizedContainerService.HintSize="397.6,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_9" Key="name" Value="[AbilityName.Trim]" />
+                            <maes:AddToDictionary x:TypeArguments="x:String, x:String" Dictionary="[AbilityDictionary]" DisplayName="Add to dictionary - Ability Description" sap:VirtualizedContainerService.HintSize="397.6,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_10" Key="description" Value="[AbilityDescription.Trim]" />
+                            <AddToCollection x:TypeArguments="scg:Dictionary(x:String, x:String)" Collection="[AbilitiesList]" DisplayName="Add To Collection - Abilities List" sap:VirtualizedContainerService.HintSize="397.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_9" Item="[AbilityDictionary]" />
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - Close Ability Description" sap:VirtualizedContainerService.HintSize="397.6,107.2" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b35a339-6d1e-4d03-adad-c684d27a2c9b" InformativeScreenshot="6435c9c3253d1dc9295b5aede400fff2" Selector="&lt;webctrl tag='SPAN' class='button-close' /&gt;&#xA;">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:Click.Target>
+                            </ui:Click>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                  <Sequence DisplayName="Get Bios" sap:VirtualizedContainerService.HintSize="610.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="Bio1" />
+                      <Variable x:TypeArguments="x:String" Name="Bio2" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Bio 1" sap:VirtualizedContainerService.HintSize="568.8,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_20">
+                      <ui:GetFullText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bc37d96f-e7be-4613-a557-7a8b35408add" InformativeScreenshot="083c385ed26e55486fe46b9a0514d125" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&#xA;&lt;webctrl tag='P' class='version-x&amp;#xA;                                  active' parentclass='version-descriptions active' /&gt;&#xA;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetFullText.Target>
+                      <ui:GetFullText.Text>
+                        <OutArgument x:TypeArguments="x:String">[Bio1]</OutArgument>
+                      </ui:GetFullText.Text>
+                    </ui:GetFullText>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - Red Pokeball" sap:VirtualizedContainerService.HintSize="568.8,107.2" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7f8d1799-431e-447d-a6a9-e2c09bf28638" InformativeScreenshot="a78003db3002e561227576f7b9a206dd" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&#xA;&lt;webctrl tag='I' class='icon icon_pokeball' parentclass='version-label version-y' /&gt;&#xA;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text - Bio 2" sap:VirtualizedContainerService.HintSize="568.8,107.2" sap2010:WorkflowViewState.IdRef="GetFullText_21">
+                      <ui:GetFullText.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="865aad2e-3e19-4d09-8b11-48ad1e5102d7" InformativeScreenshot="d7ee232ac2affe19d3cda6157767ff25" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&#xA;&lt;webctrl tag='P' class='version-y active' parentclass='version-descriptions active' /&gt;&#xA;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:GetFullText.Target>
+                      <ui:GetFullText.Text>
+                        <OutArgument x:TypeArguments="x:String">[Bio2]</OutArgument>
+                      </ui:GetFullText.Text>
+                    </ui:GetFullText>
+                    <If Condition="[Bio1.Trim.Equals(Bio2.Trim)]" DisplayName="If - Bios Equal" sap:VirtualizedContainerService.HintSize="568.8,209.6" sap2010:WorkflowViewState.IdRef="If_32">
+                      <If.Then>
+                        <Assign DisplayName="Assign - PokemonBio" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_83">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[PokemonBio]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Bio1.Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <Assign DisplayName="Assign - PokemonBio" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_84">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[PokemonBio]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[Bio1.Trim + " " + Bio2.Trim]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                  <Sequence DisplayName="Get Type &amp; Weaknesses" sap:VirtualizedContainerService.HintSize="610.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Types" />
+                      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Weaknesses" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:FindChildren Children="[Types]" DisplayName="Find Children - Type" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="410.4,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_14" Scope="FIND_CHILDREN">
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="98dbe5e5-2762-4701-ba3e-49137e1e776f" InformativeScreenshot="20ff8709ec9543ecea8dba795b56990b" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&#xA;&lt;webctrl tag='UL' parentclass='dtm-type' /&gt;&#xA;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                    </ui:FindChildren>
+                    <Assign DisplayName="Assign - TypesList" sap:VirtualizedContainerService.HintSize="410.4,60" sap2010:WorkflowViewState.IdRef="Assign_85">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:List(x:String)">[TypesList]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:List(x:String)">[new List(Of String)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each - Types" sap:VirtualizedContainerService.HintSize="410.4,386.4" sap2010:WorkflowViewState.IdRef="ForEach`1_22" Values="[Types]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="ui:UiElement">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="Type" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerText" DisplayName="Get Attribute - Type" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="GetAttribute_10">
+                              <ui:GetAttribute.Result>
+                                <OutArgument x:TypeArguments="x:String">[Type]</OutArgument>
+                              </ui:GetAttribute.Result>
+                              <ui:GetAttribute.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[item]" Id="ff99d3ea-0c13-4d0d-8e85-4db08918e2fd">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetAttribute.Target>
+                            </ui:GetAttribute>
+                            <AddToCollection x:TypeArguments="x:String" Collection="[TypesList]" DisplayName="Add To Collection - TypesList" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_10" Item="[Type.Trim]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                    <ui:FindChildren Children="[Weaknesses]" DisplayName="Find Children - Weaknesses" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="410.4,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_15" Scope="FIND_CHILDREN">
+                      <ui:FindChildren.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="36be9f2b-6251-44ff-be18-bb880f369f9d" InformativeScreenshot="f90b3735b4b114f185f65ceff178c2f8" Selector="&lt;html app='chrome.exe' title='* | Pokédex' /&gt;&#xA;&lt;webctrl tag='UL' parentclass='dtm-weaknesses' /&gt;&#xA;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:FindChildren.Target>
+                    </ui:FindChildren>
+                    <Assign DisplayName="Assign - WeaknessesList" sap:VirtualizedContainerService.HintSize="410.4,60" sap2010:WorkflowViewState.IdRef="Assign_86">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:List(x:String)">[WeaknessesList]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:List(x:String)">[new List(Of String)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each - Weaknesses" sap:VirtualizedContainerService.HintSize="410.4,386.4" sap2010:WorkflowViewState.IdRef="ForEach`1_23" Values="[Weaknesses]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="ui:UiElement">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,252" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="Weakness" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerText" DisplayName="Get Attribute - Weakness" sap:VirtualizedContainerService.HintSize="333.6,96.8" sap2010:WorkflowViewState.IdRef="GetAttribute_11">
+                              <ui:GetAttribute.Result>
+                                <OutArgument x:TypeArguments="x:String">[Weakness]</OutArgument>
+                              </ui:GetAttribute.Result>
+                              <ui:GetAttribute.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[item]" Id="deefba13-065f-495c-9bdf-b86c2f15bb5b">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:GetAttribute.Target>
+                            </ui:GetAttribute>
+                            <AddToCollection x:TypeArguments="x:String" Collection="[WeaknessesList]" DisplayName="Add To Collection - WeaknessesList" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_11" Item="[Weakness.Trim]" />
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:ForEach>
+                  </Sequence>
+                  <Sequence DisplayName="Get Evolutions If Exist" sap:VirtualizedContainerService.HintSize="610.4,68.8" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="EvolutionsExist" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="Element Exists - Evolutions H2" Exists="[EvolutionsExist]" sap:VirtualizedContainerService.HintSize="854.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe718001-1157-4a61-af18-04312531fdc3" InformativeScreenshot="351a64a0d9b6044291df53ccec2a2336" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;h2' tag='H2' aaname='Evolutions' /&gt;&#xA;" TimeoutMS="1000">
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[EvolutionsExist]" DisplayName="If - Evolutions Exist" sap:VirtualizedContainerService.HintSize="854.4,608" sap2010:WorkflowViewState.IdRef="If_34">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="548,458.4" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:Boolean" Name="EvolutionDoubleCheck" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:UiElementExists DisplayName="Element Exists - Does Not Evolve" Exists="[EvolutionDoubleCheck]" sap:VirtualizedContainerService.HintSize="506.4,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                            <ui:UiElementExists.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="beb3f709-a2d4-4b34-ac3b-7f11c58ee4a4" InformativeScreenshot="be3706ff116f645a013b56224c3b899e" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;p' tag='P' aaname='This Pokémon does not evolve.' /&gt;&#xA;" TimeoutMS="1000">
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:UiElementExists.Target>
+                          </ui:UiElementExists>
+                          <If Condition="[EvolutionDoubleCheck]" DisplayName="If - Double Check for Evolutions" sap:VirtualizedContainerService.HintSize="506.4,218.4" sap2010:WorkflowViewState.IdRef="If_33">
+                            <If.Then>
+                              <Assign DisplayName="Assign - Has Evolutions" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_87">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[HasEvolutions]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Get Evolutions" sap:VirtualizedContainerService.HintSize="375.2,492.8" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="Evolutions" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign DisplayName="Assign - Evolutions List" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_88">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))">[EvolutionsList]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="scg:List(scg:Dictionary(x:String, x:String))">[new List(Of Dictionary(Of String, String))]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign DisplayName="Assign - Has Evolutions" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_89">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Boolean">[HasEvolutions]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:FindChildren Children="[Evolutions]" DisplayName="Find Children - Evolutions" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="FindChildren_16" Scope="FIND_CHILDREN">
+                                  <ui:FindChildren.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7f1212f1-8e23-4e1b-a70a-1a583d2dd7e7" InformativeScreenshot="a67974b83097fbc8442627cdc726720f" Selector="&lt;webctrl tag='UL' class='evolution-profile*' /&gt;&#xA;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:FindChildren.Target>
+                                </ui:FindChildren>
+                                <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each - Evolutions" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_27" Values="[Evolutions]">
+                                  <ui:ForEach.Body>
+                                    <ActivityAction x:TypeArguments="ui:UiElement">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ui:UiElement" Name="item" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="669.6,1901.6" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                        <Sequence.Variables>
+                                          <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="EvolutionLI" />
+                                        </Sequence.Variables>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:FindChildren Children="[EvolutionLI]" DisplayName="Find Children - Evolutions UL" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="628,68.8" sap2010:WorkflowViewState.IdRef="FindChildren_17" Scope="FIND_CHILDREN">
+                                          <ui:FindChildren.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[item]" Id="e2cb6f2f-2dc6-4d9d-9bd0-179a82d01e85">
+                                              <ui:Target.TimeoutMS>
+                                                <InArgument x:TypeArguments="x:Int32" />
+                                              </ui:Target.TimeoutMS>
+                                              <ui:Target.WaitForReady>
+                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                              </ui:Target.WaitForReady>
+                                            </ui:Target>
+                                          </ui:FindChildren.Target>
+                                        </ui:FindChildren>
+                                        <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each - Evolution LI" sap:VirtualizedContainerService.HintSize="628,1700" sap2010:WorkflowViewState.IdRef="ForEach`1_26" Values="[EvolutionLI]">
+                                          <ui:ForEach.Body>
+                                            <ActivityAction x:TypeArguments="ui:UiElement">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="ui:UiElement" Name="li" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592.8,1565.6" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="EvolutionH3" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <ui:FindChildren Children="[EvolutionH3]" DisplayName="Find Children - Evolutions LI" Filter="&lt;webctrl tag='H3'/&gt;" sap:VirtualizedContainerService.HintSize="551.2,68.8" sap2010:WorkflowViewState.IdRef="FindChildren_18" Scope="FIND_CHILDREN">
+                                                  <ui:FindChildren.Target>
+                                                    <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[li]" Id="f69855c6-321f-4927-9bfe-47af0de82c62">
+                                                      <ui:Target.TimeoutMS>
+                                                        <InArgument x:TypeArguments="x:Int32" />
+                                                      </ui:Target.TimeoutMS>
+                                                      <ui:Target.WaitForReady>
+                                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                      </ui:Target.WaitForReady>
+                                                    </ui:Target>
+                                                  </ui:FindChildren.Target>
+                                                </ui:FindChildren>
+                                                <ui:ForEach x:TypeArguments="ui:UiElement" CurrentIndex="{x:Null}" DisplayName="For Each - Evolution H3" sap:VirtualizedContainerService.HintSize="551.2,1364" sap2010:WorkflowViewState.IdRef="ForEach`1_25" Values="[EvolutionH3]">
+                                                  <ui:ForEach.Body>
+                                                    <ActivityAction x:TypeArguments="ui:UiElement">
+                                                      <ActivityAction.Argument>
+                                                        <DelegateInArgument x:TypeArguments="ui:UiElement" Name="h3" />
+                                                      </ActivityAction.Argument>
+                                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="516,1229.6" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                                        <Sequence.Variables>
+                                                          <Variable x:TypeArguments="x:String" Name="EvolutionInfo" />
+                                                          <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="EvolutionMatches" />
+                                                        </Sequence.Variables>
+                                                        <sap:WorkflowViewStateService.ViewState>
+                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                          </scg:Dictionary>
+                                                        </sap:WorkflowViewStateService.ViewState>
+                                                        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="innerText" DisplayName="Get Attribute - Evolution Info" sap:VirtualizedContainerService.HintSize="474.4,96.8" sap2010:WorkflowViewState.IdRef="GetAttribute_12">
+                                                          <ui:GetAttribute.Result>
+                                                            <OutArgument x:TypeArguments="x:String">[EvolutionInfo]</OutArgument>
+                                                          </ui:GetAttribute.Result>
+                                                          <ui:GetAttribute.Target>
+                                                            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[h3]" Id="2a1898c9-c17d-4529-a666-fc6d9eeb0ce3">
+                                                              <ui:Target.TimeoutMS>
+                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                              </ui:Target.TimeoutMS>
+                                                              <ui:Target.WaitForReady>
+                                                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                                                              </ui:Target.WaitForReady>
+                                                            </ui:Target>
+                                                          </ui:GetAttribute.Target>
+                                                        </ui:GetAttribute>
+                                                        <ui:Matches BuilderPattern="(\w+)\s+#(\d+)" DisplayName="Matches - Evolution Info" sap:VirtualizedContainerService.HintSize="474.4,60" sap2010:WorkflowViewState.IdRef="Matches_9" Input="[EvolutionInfo]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;(\\w+)\\s+#(\\d+)&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\w+)\s+#(\d+)" RegexOption="IgnoreCase" Result="[EvolutionMatches]" />
+                                                        <ui:ForEach x:TypeArguments="str:Match" CurrentIndex="{x:Null}" DisplayName="For Each - Evolution Matches" sap:VirtualizedContainerService.HintSize="474.4,900" sap2010:WorkflowViewState.IdRef="ForEach`1_24" Values="[EvolutionMatches]">
+                                                          <ui:ForEach.Body>
+                                                            <ActivityAction x:TypeArguments="str:Match">
+                                                              <ActivityAction.Argument>
+                                                                <DelegateInArgument x:TypeArguments="str:Match" Name="match" />
+                                                              </ActivityAction.Argument>
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="439.2,765.6" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                                                                <Sequence.Variables>
+                                                                  <Variable x:TypeArguments="x:String" Name="EvolutionName" />
+                                                                  <Variable x:TypeArguments="x:String" Name="EvolutionNumber" />
+                                                                </Sequence.Variables>
+                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                  </scg:Dictionary>
+                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                <Assign DisplayName="Assign - Evolution Dictionary" sap:VirtualizedContainerService.HintSize="397.6,60" sap2010:WorkflowViewState.IdRef="Assign_90">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[EvolutionDictionary]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">[new Dictionary(Of String, String)]</InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign DisplayName="Assign - Evolution Name" sap:VirtualizedContainerService.HintSize="397.6,60" sap2010:WorkflowViewState.IdRef="Assign_91">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[EvolutionName]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">[match.Groups(1).ToString]</InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <Assign DisplayName="Assign - Evolution Number" sap:VirtualizedContainerService.HintSize="397.6,60" sap2010:WorkflowViewState.IdRef="Assign_92">
+                                                                  <Assign.To>
+                                                                    <OutArgument x:TypeArguments="x:String">[EvolutionNumber]</OutArgument>
+                                                                  </Assign.To>
+                                                                  <Assign.Value>
+                                                                    <InArgument x:TypeArguments="x:String">[match.Groups(2).ToString]</InArgument>
+                                                                  </Assign.Value>
+                                                                </Assign>
+                                                                <maes:AddToDictionary x:TypeArguments="x:String, x:String" Dictionary="[EvolutionDictionary]" DisplayName="Add to dictionary - Evolution Dictionary - Name" sap:VirtualizedContainerService.HintSize="397.6,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_11" Key="name" Value="[EvolutionName]" />
+                                                                <maes:AddToDictionary x:TypeArguments="x:String, x:String" Dictionary="[EvolutionDictionary]" DisplayName="Add to dictionary - Evolution Dictionary - Number" sap:VirtualizedContainerService.HintSize="397.6,135.2" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_12" Key="number" Value="[EvolutionNumber]" />
+                                                                <AddToCollection x:TypeArguments="scg:Dictionary(x:String, x:String)" Collection="[EvolutionsList]" DisplayName="Add To Collection - Evolutions List" sap:VirtualizedContainerService.HintSize="397.6,22.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_12" Item="[EvolutionDictionary]" />
+                                                              </Sequence>
+                                                            </ActivityAction>
+                                                          </ui:ForEach.Body>
+                                                        </ui:ForEach>
+                                                      </Sequence>
+                                                    </ActivityAction>
+                                                  </ui:ForEach.Body>
+                                                </ui:ForEach>
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </ui:ForEach.Body>
+                                        </ui:ForEach>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ForEach.Body>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:ForEach>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Assign DisplayName="Assign - Has Evolutions" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_93">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[HasEvolutions]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                  <Sequence DisplayName="Format &amp; Send HTTP Request" sap:VirtualizedContainerService.HintSize="610.4,497.6" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Default="[JsonConvert.SerializeObject(EvolutionsList)]" Name="EvolutionsJSON" />
+                      <Variable x:TypeArguments="x:String" Default="[JsonConvert.SerializeObject(TypesList)]" Name="TypesJSON" />
+                      <Variable x:TypeArguments="x:String" Default="[JsonConvert.SerializeObject(WeaknessesList)]" Name="WeaknessesJSON" />
+                      <Variable x:TypeArguments="x:String" Default="[JsonConvert.SerializeObject(AbilitiesList)]" Name="AbilitiesJSON" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If Condition="[HasEvolutions]" DisplayName="If - Format Request Body if Evolutions" sap:VirtualizedContainerService.HintSize="568.8,209.6" sap2010:WorkflowViewState.IdRef="If_35">
+                      <If.Then>
+                        <Assign DisplayName="Assign - RequestBody" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_94">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[RequestBody]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">["{" + Chr(34) + "name" + Chr(34) + ":" + Chr(34) + PokemonName + Chr(34) + "," + Chr(34) + "number" + Chr(34) +":" + Chr(34) +  PokemonNumber + Chr(34) + "," + Chr(34) + "image" + Chr(34) + ":" + Chr(34) + PokemonImage + Chr(34) + ","+ Chr(34) + "type" + Chr(34) + ":" + TypesJSON + "," + Chr(34) + "bio" + Chr(34) + ":" + Chr(34) + PokemonBio + Chr(34) + "," + Chr(34) + "height" + Chr(34) + ":" + Chr(34) + PokemonHeight + Chr(34) + "," + Chr(34) + "weight" + Chr(34) + ":" + Chr(34) + PokemonWeight + Chr(34) + "," + Chr(34) + "weaknesses" + Chr(34) + ":" + WeaknessesJSON + "," + Chr(34) + "evolutions" + Chr(34) + ":" + EvolutionsJSON + "," + Chr(34) + "abilities" + Chr(34) + ":" + AbilitiesJSON + "," + Chr(34) + "category" + Chr(34) + ":" + Chr(34) + PokemonCategory + Chr(34) + "," + Chr(34) + "region" + Chr(34) + ":" + Chr(34) + PokemonRegion + Chr(34) +  "}"]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Then>
+                      <If.Else>
+                        <Assign DisplayName="Assign - RequestBody" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_95">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[RequestBody]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String" xml:space="preserve">["{" + Chr(34) + "name" + Chr(34) + ":" + Chr(34) + PokemonName + Chr(34) + "," + Chr(34) + "number" + Chr(34) +":" + Chr(34) +  PokemonNumber + Chr(34) + "," + Chr(34) + "image" + Chr(34) + ":" + Chr(34) + PokemonImage + Chr(34) + ","+ Chr(34) + "type" + Chr(34) + ":" + TypesJSON + "," + Chr(34) + "bio" + Chr(34) + ":" + Chr(34) + PokemonBio + Chr(34) + "," + Chr(34) + "height" + Chr(34) + ":" + Chr(34) + PokemonHeight + Chr(34) + "," + Chr(34) + "weight" + Chr(34) + ":" + Chr(34) + PokemonWeight + Chr(34) + "," + Chr(34) + "weaknesses" + Chr(34) + ":" + WeaknessesJSON + "," + Chr(34) + "abilities" + Chr(34) + ":" + AbilitiesJSON + "," + Chr(34) + "category" + Chr(34) + ":" + Chr(34) + PokemonCategory + Chr(34) + "," + Chr(34) + "region" + Chr(34) + ":" + Chr(34) + PokemonRegion + Chr(34) +  "}"]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </If.Else>
+                    </If>
+                    <ui:HttpClient ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" Body="[RequestBody]" BodyFormat="application/json" ClientCertificate="[Nothing]" ClientCertificatePassword="[Nothing]" DisplayName="HTTP Request" EndPoint="http://localhost:5000/api/pokemon" sap:VirtualizedContainerService.HintSize="568.8,22.4" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="POST" TimeoutMS="6000">
+                      <ui:HttpClient.Attachments>
+                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                      </ui:HttpClient.Attachments>
+                      <ui:HttpClient.Cookies>
+                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                      </ui:HttpClient.Cookies>
+                      <ui:HttpClient.Headers>
+                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                      </ui:HttpClient.Headers>
+                      <ui:HttpClient.Parameters>
+                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                      </ui:HttpClient.Parameters>
+                      <ui:HttpClient.UrlSegments>
+                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                      </ui:HttpClient.UrlSegments>
+                    </ui:HttpClient>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="568.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[PokemonName + &quot; Processed.&quot;]" />
+                  </Sequence>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - Next Pokemon" sap:VirtualizedContainerService.HintSize="610.4,107.2" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f07e60f4-6b38-42ba-902d-37d287225853" InformativeScreenshot="5e96c4db9c5341860dc137f89832baba" Selector="&lt;webctrl tag='DIV' parentclass='next' /&gt;&#xA;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
+                  <Assign DisplayName="Assign - LoopNumber Increment" sap:VirtualizedContainerService.HintSize="610.4,60" sap2010:WorkflowViewState.IdRef="Assign_96">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[LoopNumber]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[LoopNumber + 1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleDoWhile.Body>
+              <ui:InterruptibleDoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="LoopNumber &lt;= 898" />
+              </ui:InterruptibleDoWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleDoWhile>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+  </Sequence>
+</Activity>
